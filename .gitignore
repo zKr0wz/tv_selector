@@ -1,0 +1,5 @@
+.venv/
+__psycache__/
+.env
+.pyc
+data/media.db

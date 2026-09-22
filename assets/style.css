@@ -1,0 +1,94 @@
+body {
+    background-color: #111;
+}
+
+.movie-card {
+    background-color: #1b1b1b;
+    border: none;
+    overflow: hidden;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.movie-poster {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+}
+
+.movie-title {
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.movie-card-clickable {
+    cursor: pointer;
+}
+
+.details-poster {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.movie-row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-top: 0.5rem;
+    padding-bottom: 1.5rem;
+
+    scroll-behavior: smooth;
+}
+
+.movie-row-item {
+    flex: 0 0 180px;
+    min-width: 180px;
+}
+
+.movie-row::-webkit-scrollbar {
+    height: 8px;
+}
+
+.movie-row::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+.movie-row::-webkit-scrollbar-track {
+    background: #222;
+}
+
+.episode-item {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid
+        rgba(255, 255, 255, 0.1);
+}
+
+.episode-still {
+    width: 200px;
+    height: 112px;
+    object-fit: cover;
+    border-radius: 6px;
+    flex-shrink: 0;
+}
+
+.episode-info {
+    flex: 1;
+}
+
+.episode-overview {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
